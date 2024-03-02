@@ -1,0 +1,279 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
+.app_header__container {
+  padding: 30px;
+  background-color: #003c72; }
+
+.app_hero_image {
+  width: 40rem; }
+
+.input-group_bg {
+  padding: 10px !important;
+  background-color: #2770b0;
+  border-radius: 32px; }
+
+.app_search_input,
+.app_search_input:focus {
+  background-color: #2770b0;
+  border-width: 0px;
+  color: #fff; }
+
+.search_left_logo {
+  width: 2rem;
+  height: 2rem; }
+
+.app_search_btn {
+  background-color: #fff;
+  border-radius: 32px; }
+
+.hero_text_container {
+  padding: 10px !important; }
+
+.hero_image_container {
+  padding: 10px !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: end; }
+
+.hero_text_description {
+  font-size: 4.4rem;
+  color: #fff; }
+
+.btn_welcome {
+  background-color: #2770b0;
+  color: #fff; }
+
+.hero_text_sub_description {
+  color: #e7e6e6;
+  font-size: 1.5rem; }
+
+.input-group_join_waitlist {
+  padding: 10px !important;
+  background-color: #fff;
+  border-radius: 1.6rem;
+  width: 40rem;
+  margin-top: 10rem; }
+  @media only screen and (max-width: 75em) {
+    .input-group_join_waitlist {
+      width: 30rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .input-group_join_waitlist {
+      width: 30rem; } }
+  @media only screen and (min-width: 112.5em) {
+    .input-group_join_waitlist {
+      width: 40rem; } }
+
+.app_search_input2,
+.app_search_btn2:focus {
+  background-color: #fff;
+  border-radius: 1.6rem;
+  border-color: #fff !important; }
+
+.app_search_btn2 {
+  background-color: #003c72;
+  color: #fff;
+  border-radius: 1.6rem; }
+
+.form-control:focus {
+  border-color: transparent;
+  box-shadow: inset 0 1px 1px transparent, 0 0 8px transparent;
+  outline: none;
+  border-width: 0; }
+
+.about_section {
+  background-image: url("/img/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10px;
+  padding-bottom: 50px; }
+  .about_section__image_6 {
+    width: 40rem;
+    height: 40rem; }
+  .about_section__container {
+    padding-top: 100px; }
+  .about_section__image_container {
+    display: flex;
+    justify-content: flex-end; }
+  .about_section__description {
+    font-size: 1.6rem;
+    color: #696868; }
+  .about_section__title {
+    font-size: 4rem;
+    margin-bottom: 2rem; }
+  .about_section__description_container {
+    align-items: center; }
+  .about_section__row {
+    align-items: center; }
+
+.top_feature_section {
+  background-color: #f8f5ff;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .top_feature_section__title {
+    font-size: 4rem;
+    color: #1b2559;
+    text-align: center; }
+  .top_feature_section__description {
+    font-size: 1.6rem;
+    color: #696868;
+    text-align: center;
+    margin-bottom: 3rem; }
+  .top_feature_section__interactive_chat_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0c3740;
+    border-radius: 32px;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-left: 20px; }
+    .top_feature_section__interactive_chat_container--image {
+      width: 24rem;
+      height: 24rem; }
+    .top_feature_section__interactive_chat_container--title {
+      font-size: 3.2rem;
+      color: #ffffff;
+      margin-top: 5px; }
+    .top_feature_section__interactive_chat_container--description {
+      color: #e6dcdc;
+      line-height: 19.36px;
+      font-size: 1.6rem; }
+  .top_feature_section__mentorship--title {
+    font-size: 3.2rem;
+    color: #fff;
+    line-height: 38.73px; }
+  .top_feature_section__mentorship--description {
+    color: #e6dcdc;
+    font-size: 1.6rem;
+    line-height: 19.36px; }
+  .top_feature_section__mentorship--card {
+    background-color: #b91a7a;
+    border-radius: 32px; }
+    @media only screen and (max-width: 75em) {
+      .top_feature_section__mentorship--card {
+        width: 100% !important;
+        margin-bottom: 5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .top_feature_section__mentorship--card {
+        width: 100% !important;
+        margin-bottom: 5rem; } }
+
+.manage_team_section {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .manage_team_section__card {
+    background-color: #1b2559;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden; }
+  .manage_team_section__title {
+    color: #fff;
+    font-size: 4rem;
+    line-height: 48.41px;
+    font-weight: 600;
+    text-align: center; }
+
+.footer_section {
+  background-color: #1b2559; }
+  .footer_section__row {
+    background-color: #1f2b67;
+    border-radius: 8px; }
+  .footer_section__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+  .footer_section__col_1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .footer_section__text {
+    color: #fff; }
+  .footer_section__vr {
+    color: #fff; }
+
+.waitlist_section {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  .waitlist_section__row {
+    height: 70vh;
+    width: 100rem; }
+  .waitlist_section__col_1 {
+    background-color: #003c72; }
+  .waitlist_section__btn {
+    background-color: #003c72;
+    width: 30rem;
+    border-radius: 16px;
+    color: #fff; }
+  .waitlist_section__btn:focus, .waitlist_section__btn:hover {
+    background-color: #003c72;
+    width: 30rem;
+    border-radius: 16px;
+    color: #fff; }
+  .waitlist_section__btn_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 140px; }
+  .waitlist_section__input:focus, .waitlist_section__input:active {
+    border: 1px solid #ced4da; }
+  .waitlist_section__title {
+    font-size: 4rem;
+    color: #000000;
+    font-weight: 700; }
+  .waitlist_section__description {
+    font-size: 2rem; }
+  .waitlist_section__image {
+    width: 6rem; }
+  .waitlist_section__side_title {
+    font-size: 3.4rem;
+    color: #ffffff;
+    margin-top: 50px; }
